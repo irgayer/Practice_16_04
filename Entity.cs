@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice_16_04
 {
-    public class Entity
+    public abstract class Entity
     {
         public Guid Id { get; set; }
 

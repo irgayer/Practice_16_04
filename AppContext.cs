@@ -15,7 +15,7 @@
         public AppContext()
             : base("name=AppContext")
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<AppContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<AppContext>());
         }
 
         // Добавьте DbSet для каждого типа сущности, который требуется включить в модель. Дополнительные сведения 
